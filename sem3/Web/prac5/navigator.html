@@ -1,0 +1,18 @@
+<script>
+attrs = ["appCodeName",
+		"cookieEnabled",
+		"userAgent",
+		"appName",
+		"appVersion",
+		"platform",
+		"language",
+		"onLine"];
+	
+	document.write("<table><th></th>");
+	for (let attr of attrs) {
+		document.write(`<tr><td>${attr}</td>`)
+		out = eval("navigator." + attr)
+		document.write(`<td>${out}</td></tr>`);
+	}
+	document.write("</table>");
+</script>

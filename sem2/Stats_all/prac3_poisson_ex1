@@ -1,0 +1,9 @@
+> rate=2
+> opar=par(mfrow=c(2,2))
+> x=0:10
+> opar=par(mfrow=c(2,2))
+> plot(x,dpois(x,lambda=rate),main="PMF for po(lambda)")
+> plot(x,ppois(x,lambda=rate),type="S",main="cdf")
+> draws=rpois(100,lambda=rate)
+> hist(draws,breaks=(0:(max(draws)+1))-0.5,probability=TRUE,main="Random draws for po(2)")
+> points(x,dpois(x,lambda=rate),col="red")

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+<head>
+	<title> Search </title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+		
+	<form>
+		<input class="box" id="search" type="search" autofocus>
+		<input class="box button" type="submit" value="Search">
+	</form>
+
+	<script>
+		"use strict"
+		document.querySelector('form').addEventListener('submit', function(e) {
+			let name = document.querySelector('#search').value;
+			alert('Hello, ' + name);
+			e.preventDefault();
+		});
+	</script>
+
+</body>

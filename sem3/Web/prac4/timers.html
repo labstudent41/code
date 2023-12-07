@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+<head>
+	<title>Timers</title>
+	<link href="../styles.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+		function printMsg() {
+			document.getElementById("op").innerHTML = new Date();
+		}
+		function start() {
+			id = window.setInterval(printMsg, 1000);
+		}
+		function stop() {
+			window.clearTimeout(id);
+		}
+	</script>
+</head>
+
+<body>
+	<button class="button" onclick="start();">start</button>
+	<button class="button" onclick="stop();">stop</button>
+	<div class="box" style="height: auto; margin: 50px 10px 50px 10px">
+		<div class="box-heading"> Current time </h>
+		<div class="box-content" id="op">Some text</p>
+	</div>
+</body>

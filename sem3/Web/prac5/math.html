@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+<head>
+	<title>Math</title>
+	<link href="../styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var min = 10; var max = 20;
+		data = [
+			"Math.PI",
+			"Math.random() * (max - min) + min",
+			"Math.round(6.54)",
+			"Math.pow(10, 3)",
+			"Math.sqrt(64)",
+			"Math.abs(-67)",
+			"Math.ceil(6.4)",
+			"Math.floor(6.4)",
+			"Math.sin(90 * Math.PI/180)",
+			"Math.cos(90 * Math.PI/180)",
+			"Math.max(180, 360, 20, 10)",
+			"Math.min(180, 360, 20, 10)",
+			]
+		
+		document.write("<table><tr><th>Function</th><th>Output</th></tr>")
+		data.forEach((item) => {
+			document.write(`<tr><td>${item}</td><td>${eval(item)}</td><tr>`);
+		})
+		document.write("</table>")
+	</script>
+	<br><br><br>
+</body>

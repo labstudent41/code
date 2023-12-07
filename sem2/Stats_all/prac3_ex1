@@ -1,0 +1,18 @@
+>  n=13;p=0.7
+> y=dbinom(6,size=n,prob=p)
+> y
+[1] 0.0441524
+> pbinom(9,size=n,prob=p)
+[1] 0.5793944
+> n=13
+> p=0.7
+> x=0:n
+> plot(x,dbinom(x,size=n,prob=p),main="PMF for Bin(13,0.7)")
+> plot(x,pbinom(x,size=n,prob=p),type='S',main="Cumuative Distribution function for bin(13,0.7)")
+> draws=rbinom(100,size=n,prob=p)
+> brks=(0:(n+1))-0.5
+> hist(draws,breaks=brks,main="Random Draws from Bin(13,0.7)")
+> hist(draws,breaks=brks,probability=TRUE)
+> points(x,dbinom(x,size=n,prob=p),col="red")
+> points(x,dbinom(x,size=n,prob=p),col="red")
+> 

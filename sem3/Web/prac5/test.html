@@ -1,0 +1,17 @@
+<html>
+<body>
+
+	<input type="button" value="<-" onclick="goBack()">
+	<input type="button" value="->" onclick="goForward()">
+	<p id="out">Out</p>
+	<script>
+		function goForward() {
+			window.history.forward();
+		}
+		function goBack() {
+			window.history.back();
+		}
+		document.getElementById("out").innerHTML = history.length;
+	</script>
+</body>
+</html>
