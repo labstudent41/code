@@ -1,0 +1,17 @@
+open class Vehicle {
+	fun display() {
+		println("I am a vehicle")
+	}
+}
+
+class Car : Vehicle() {
+	var brand = ""
+	fun details() {
+		println("I am a car")
+	}
+}
+
+fun main() {
+	var c1 = Car()
+	c1.details()
+}
