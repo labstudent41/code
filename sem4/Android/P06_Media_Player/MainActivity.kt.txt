@@ -1,0 +1,34 @@
+package com.example.mediaplayer
+
+import android.media.MediaPlayer
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+
+class MainActivity : AppCompatActivity() {
+	private lateinit var playBtn: Button
+	private lateinit var pauseBtn: Button
+	private lateinit var stopBtn: Button
+
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+
+		val mp: MediaPlayer = MediaPlayer.create(applicationContext, R.raw.music)
+		playBtn = findViewById(R.id.playBtn)
+		pauseBtn = findViewById(R.id.pauseBtn)
+		stopBtn = findViewById(R.id.stopBtn)
+
+		playBtn.setOnClickListener {
+			mp.start()
+		}
+
+		pauseBtn.setOnClickListener {
+			mp.pause()
+		}
+		stopBtn.setOnClickListener {
+			mp.stop()
+			mp.prepare()
+		}
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form Validation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<style>
+		body {
+			color: ghostwhite;
+			background-color: #1b1b1b;
+			text-align: center;
+			font-family: Arial, Arial, Helvetica, sans-serif;
+		}
+		h1 { color: aqua; }
+	</style>
+	<script>
+		var app = angular.module('user', []);
+		app.directive('appDirective', function() {
+			return {
+				require: "ngModel",
+				link: function (scope, element, attr, mCtrl) {
+					function validate(value) {
+						if (value >= 18) {
+							mCtrl.$setValidity('charE', true);
+						} else {
+							mCtrl.$setValidity('charE', false);
+						}
+						return value;
+					}
+					mCtrl.$parsers.push(validate);
+				}
+			}
+		});
+	</script>
+</head>
+
+<body ng-app="user">
+	<h1>User Details</h1>
+	<h3>AngularJS custom form validation</h3>
+	<form name="entry">
+		Name: <input name="name" required><br><br>
+		Age: <input name="age" ng-model="age" required app-directive/>
+	</form>
+	<p>Note: Age should be greater than 18</p>
+	<h3>The validity of the form is : {{ entry.age.$valid }}</h3>
+</body>
+
+</html>

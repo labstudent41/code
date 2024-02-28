@@ -1,0 +1,207 @@
+
+R version 3.2.2 (2015-08-14) -- "Fire Safety"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> set.seed(0)
+> sweetsold = c(rnorm(50, mean=140, sd=5))
+> t.test(sweetsold, mu=150)
+
+        One Sample t-test
+
+data:  sweetsold
+t = -15.249, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 150
+95 percent confidence interval:
+ 138.8176 141.4217
+sample estimates:
+mean of x 
+ 140.1197 
+
+> set.seed(0)
+> shopone = rnorm(50, mean=140, sd=4.5)
+> shoptwo = rnorm(50, mean=150, sd=4)
+> t.test(ShopOne, ShopTwo, paired=FALSE)
+Error in t.test(ShopOne, ShopTwo, paired = FALSE) : 
+  object 'ShopOne' not found
+> t.test(shopone, shoptwo, paired=FALSE)
+
+        Welch Two Sample t-test
+
+data:  shopone and shoptwo
+t = -13.158, df = 94.837, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -11.483435  -8.472434
+sample estimates:
+mean of x mean of y 
+ 140.1077  150.0856 
+
+> t.test(shopone, shoptwo, var.equal=TRUE)
+
+        Two Sample t-test
+
+data:  shopone and shoptwo
+t = -13.158, df = 98, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -11.482807  -8.473061
+sample estimates:
+mean of x mean of y 
+ 140.1077  150.0856 
+
+> set.seed(2820)
+> shopone = rnorm(100, mean=14, sd=0.3)
+> shooptwo = rnorm(100, mean=13, sd=0.2)
+> t.test(shopone, shoptwo, paired=TRUE)
+Error in complete.cases(x, y) : not all arguments have the same length
+> shooptwo = rnorm(100, mean=13, sd=0.2)
+> shoptwo = rnorm(100, mean=13, sd=0.2)
+> t.test(shopone, shoptwo, paired=TRUE)
+
+        Paired t-test
+
+data:  shopone and shoptwo
+t = 29.289, df = 99, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.9740056 1.1155664
+sample estimates:
+mean of the differences 
+               1.044786 
+
+> x = rnorm(249, mean=20)
+> y = rnorm(79, mean=30)
+> var.test(x, y, alternative="two.sided")
+
+        F test to compare two variances
+
+data:  x and y
+F = 1.0436, num df = 248, denom df = 78, p-value = 0.842
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.7142901 1.4730739
+sample estimates:
+ratio of variances 
+          1.043619 
+
+> A = c(16,17, 25, 26, 32, 34, 38, 40, 42)
+> B = c(600, 590, 590, 630, 610, 630)
+> var.test(a, b, alternative='two.sided')
+Error in var.test(a, b, alternative = "two.sided") : object 'a' not found
+> var.test(A, B, alternative='two.sided')
+
+        F test to compare two variances
+
+data:  A and B
+F = 0.27252, num df = 8, denom df = 5, p-value = 0.1012
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.04033118 1.31282683
+sample estimates:
+ratio of variances 
+         0.2725248 
+
+> x = rnorm(249, mean=20)
+> y = rnorm(79, mean=30)
+> var.test(x, y, alternative="two.sided")
+
+        F test to compare two variances
+
+data:  x and y
+F = 1.1855, num df = 248, denom df = 78, p-value = 0.3791
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.8114287 1.6734021
+sample estimates:
+ratio of variances 
+          1.185545 
+
+> x = rnorm(249, mean=20)
+> y = rnorm(79, mean=30)
+> var.test(x, y, alternative="two.sided")
+
+        F test to compare two variances
+
+data:  x and y
+F = 1.2989, num df = 248, denom df = 78, p-value = 0.1747
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.8890345 1.8334478
+sample estimates:
+ratio of variances 
+          1.298931 
+
+> x = rnorm(249, mean=20)
+> y = rnorm(79, mean=30)
+> var.test(x, y, alternative="two.sided")
+
+        F test to compare two variances
+
+data:  x and y
+F = 1.0236, num df = 248, denom df = 78, p-value = 0.9245
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.7006098 1.4448612
+sample estimates:
+ratio of variances 
+          1.023632 
+
+> x = rnorm(249, mean=20)
+> x = rnorm(249, mean=20)
+> var.test(x, y, alternative="two.sided")
+
+        F test to compare two variances
+
+data:  x and y
+F = 0.98974, num df = 248, denom df = 78, p-value = 0.9298
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.6774153 1.3970275
+sample estimates:
+ratio of variances 
+         0.9897434 
+
+> x = rnorm(249, mean=20)
+> y = rnorm(79, mean=30)
+> var.test(x, y, alternative="two.sided")
+
+        F test to compare two variances
+
+data:  x and y
+F = 1.1298, num df = 248, denom df = 78, p-value = 0.5322
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.7732965 1.5947625
+sample estimates:
+ratio of variances 
+          1.129831 
+
+> x = c(25, 29, 35, 46, 58, 66,68)
+> y = c(14, 16, 24, 28, 32, 35, 37, 42, 43, 45, 47)
+> var.test(x, y, alternative='two.sided')
+
+        F test to compare two variances
+
+data:  x and y
+F = 2.4081, num df = 6, denom df = 10, p-value = 0.2105
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+  0.5913612 13.1514157
+sample estimates:
+ratio of variances 
+            2.4081 
+
+> 

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+<head>
+	<title> Functions </title>
+	<link href="../styles.css" rel="stylesheet">
+
+	<script type="text/javascript">
+		function fibonacci() {
+			let limit = Number(document.getElementById("input").value);
+			document.querySelector("#output").innerHTML = `
+				<b>First ${limit} fibonacci numbers</b><br>`;
+			let fterm = 0;
+			let sterm = 1;
+			let nterm;
+			document.querySelector("#output").innerHTML += `${fterm}</br>`;
+			document.querySelector("#output").innerHTML += `${sterm}</br>`;
+			for (let i = 3; i <= limit; i++) {
+				nterm = fterm + sterm;
+				fterm = sterm;
+				sterm = nterm;
+				document.querySelector("#output").innerHTML += `${nterm}</br>`;
+			}
+		}
+
+		function factorial() {
+			let num = Number(document.getElementById("input").value);
+			document.querySelector("#output").innerHTML = ("<b>Factorial of " + num + " numbers</b><br>");
+			let n = 1;
+			for (let i = 1; i <= num; i++) {
+				n *= i;
+				document.querySelector("#output").innerHTML += (n + "</br>");
+			}
+		}
+
+		function prime() {
+			let num = Number(document.getElementById("input").value);
+			let found = 0;
+			for (let i = 2; i <= num/2; i++) {
+				if (num % i == 0) {
+					found = 1;
+					break;
+				}
+			}
+			if (found) {
+				document.querySelector("#output").innerHTML = `
+					<div style='color: #ff7733'>${num} is not a prime number</div>`;
+			} else {
+				document.querySelector("#output").innerHTML = `
+					<div style='color: #00dd00'>${num} is a prime number</div>`;
+			}
+		}
+
+		function reverse() {
+			output = document.querySelector("#output")
+			let num = Number(document.querySelector("#input").value);
+			let n = num;
+			let reverse = 0;
+			while (n > 0) {
+				digit = (n % 10);
+				n = parseInt(n/10);
+				reverse = (reverse * 10) + digit;
+			}
+			output.innerHTML = `Reverse of ${num} is ${reverse}`;
+		}
+
+		function checkInt() {
+			let inputVal = Number(document.getElementById("input").value);
+			if (Number.isInteger(inputVal)) {
+				return true
+			} else {
+				document.querySelector("#output").innerHTML = `
+					<div style='color: red; text-align: center'>
+						Oops! This function only accepts integer values.
+					</div>`;
+				return false
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<div style="margin: 50px 10px 50px 10px; text-align: center">
+		<input class="input search box" style="width: 750px" id="input" type="text" autofocus>
+		<br>
+		<button onclick="checkInt() && fibonacci()" class="box button">Calculate Fibonacci</button>
+		<button onclick="checkInt() && factorial()" class="box button">Calculate Factorial</button>
+		<button onclick="checkInt() && prime()" class="box button">Check if prime</button>
+		<button onclick="checkInt() && reverse()" class="box button">Reverse</button>
+	</div>
+	<div class="box">
+		<h3 class="box-heading">Output</h3>
+		<div id="output" class="box-content">
+			<div style="color: darkgray; text-align: center">< Run a function to see the output ><div>
+		</div>
+	</div>
+
+</body>

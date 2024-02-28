@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20.5 981 530.5" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="ellipse" id="id1739194243">
+            <ellipse cx="195.0" cy="172.0" rx="19.0" ry="18.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id2099583395">
+            <polyline points="195.0,191.0 196.0,257.0 196.0,257.0 161.0,290.0 161.0,290.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1905850392">
+            <polyline points="194.0,256.0 225.0,290.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1023971018">
+            <polyline points="170.0,216.0 241.0,215.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id106848360" fill="black" latexdraw:position="bl">
+            <text x="183.0" y="318.0">User</text>
+        </g>
+        <g latexdraw:type="text" id="id1958437083" fill="black" latexdraw:position="bl">
+            <text x="545.0" y="70.0">Login</text>
+        </g>
+        <g latexdraw:type="text" id="id1380700448" fill="black" latexdraw:position="bl">
+            <text x="533.0" y="138.0">Search Book</text>
+        </g>
+        <g latexdraw:type="text" id="id475440643" fill="black" latexdraw:position="bl">
+            <text x="536.0" y="206.0">View Book</text>
+        </g>
+        <g latexdraw:type="text" id="id1407696742" fill="black" latexdraw:position="bl">
+            <text x="538.0" y="275.0">Buy Books</text>
+        </g>
+        <g latexdraw:type="text" id="id2011587439" fill="black" latexdraw:position="bl">
+            <text x="530.0" y="348.0">Payment</text>
+        </g>
+        <g latexdraw:type="text" id="id2065229221" fill="black" latexdraw:position="bl">
+            <text x="531.0" y="424.0">Log Out</text>
+        </g>
+        <g latexdraw:type="ellipse" id="id1404021836">
+            <ellipse cx="561.5" cy="67.0" rx="44.5" ry="16.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id357007923">
+            <ellipse cx="567.0" cy="133.5" rx="60.0" ry="18.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id1739733938">
+            <ellipse cx="0.5" cy="0.5" rx="1.0" ry="1.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id820551364">
+            <ellipse cx="567.0" cy="202.0" rx="72.0" ry="21.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id1452643739">
+            <ellipse cx="567.75" cy="272.25" rx="72.75" ry="20.25" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id188945822">
+            <ellipse cx="555.5" cy="346.0" rx="56.5" ry="19.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id1804885416">
+            <ellipse cx="555.0" cy="419.0" rx="41.0" ry="19.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1606830476">
+            <polyline points="516.0,67.0 251.0,152.0 250.0,151.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id40502004">
+            <polyline points="507.0,135.0 263.0,187.0 263.0,187.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id209323863">
+            <polyline points="494.0,202.0 267.0,214.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1062771847">
+            <polyline points="495.0,272.0 265.0,246.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1335875413">
+            <polyline points="498.0,346.0 267.0,292.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1855777616">
+            <polyline points="513.0,421.0 248.0,320.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id290416305" fill="black" latexdraw:position="bl">
+            <text x="805.0" y="75.0">Register</text>
+        </g>
+        <g latexdraw:type="text" id="id1584727290" fill="black" latexdraw:position="bl">
+            <text x="777.0" y="332.0">COD</text>
+        </g>
+        <g latexdraw:type="text" id="id1995643112" fill="black" latexdraw:position="bl">
+            <text x="780.0" y="375.0">UPI</text>
+        </g>
+        <g latexdraw:type="ellipse" id="id465507891">
+            <ellipse cx="828.0" cy="71.5" rx="58.0" ry="25.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id210236708">
+            <ellipse cx="792.0" cy="327.0" rx="56.0" ry="19.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="ellipse" id="id1011798481">
+            <ellipse cx="792.0" cy="372.0" rx="60.0" ry="22.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id927850572">
+            <polyline points="605.0,68.0 769.0,71.0 769.0,70.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id159908394" fill="black" latexdraw:position="bl">
+            <text x="650.0" y="57.0">&lt;&lt;include&gt;&gt;</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1067466873">
+            <polyline points="611.0,348.0 735.0,327.0 735.0,327.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1400317310">
+            <polyline points="612.0,349.0 731.0,372.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1306474416" fill="black" latexdraw:position="bl" transform="rotate(-8.743127657058647 0.0 0.0) translate(-56.885012849693226 94.1145331093818)">
+            <text x="643.9999999999998" y="325.0000000000001">&lt;&lt;include&gt;&gt;</text>
+        </g>
+        <g latexdraw:type="text" id="id734348774" fill="black" latexdraw:position="bl" transform="rotate(10.807932191175425 0.0 0.0) translate(60.26110302876771 -126.97477501455685)">
+            <text x="641.0000000000001" y="382.0000000000001">&lt;&lt;include&gt;&gt;</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id141813509">
+            <rect x="449.0" y="0.5" width="491.0" height="488.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:centreHoriz>false</latexdraw:centreHoriz>
+            <latexdraw:positionVert/>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:vpx>0.5</latexdraw:vpx>
+            <latexdraw:vpy>0.383</latexdraw:vpy>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

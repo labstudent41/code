@@ -1,0 +1,46 @@
+package com.example.myapplication
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Spinner
+import android.widget.TextView
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var radioGroup: RadioGroup
+    private lateinit var radioBtn: RadioButton
+    private lateinit var spinner: Spinner
+    private lateinit var editText: EditText
+    private lateinit var textView: TextView
+    private lateinit var button: Button
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        radioGroup = findViewById(R.id.radioGroup)
+        button = findViewById(R.id.button)
+        spinner = findViewById(R.id.spinner)
+        editText = findViewById(R.id.editText)
+        textView = findViewById(R.id.textView)
+
+        val spinnerAdapter = ArrayAdapter.createFromResource(
+            this, R.array.spinner_options, android.R.layout.simple_spinner_item
+        )
+        spinner.adapter = spinnerAdapter
+
+        button.setOnClickListener {
+            radioBtn = findViewById(radioGroup.checkedRadioButtonId)
+            val radioText = radioBtn.text.toString()
+            val spinnerText = spinner.selectedItem.toString()
+            val editTextValue = editText.text.toString()
+
+            textView.text = "$spinnerText. $editTextValue\nwants to pursue $radioText"
+        }
+    }
+}

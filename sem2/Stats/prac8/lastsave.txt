@@ -1,0 +1,85 @@
+
+R version 3.2.2 (2015-08-14) -- "Fire Safety"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> p=0.75
+> free=5
+> qchisq(0.75,df=free)
+[1] 6.62568
+> vec=1:4
+> df=6
+> dchisq=(vec,df=df)
+Error: unexpected ',' in "dchisq=(vec,"
+> dchisq(vec,df=df)
+[1] 0.03790817 0.09196986 0.12551072 0.13533528
+> df=5
+> pchisq(5,df=df,lower.tail=TRUE)
+[1] 0.5841198
+> pchisq(5,df=df,lower.tail=false)
+Error in pchisq(5, df = df, lower.tail = false) : 
+  object 'false' not found
+> pchisq(5,df=df,lower.tail=FALSe)
+Error in pchisq(5, df = df, lower.tail = FALSe) : 
+  object 'FALSe' not found
+> pchisq(5,df=df,lower.tail=FALSE)
+[1] 0.4158802
+> x=rchisq(50000,df=5)
+> hist(x,freq=FFALSE,xlim=c(0,16),ylim=c(0,0.2))
+Error in hist.default(x, freq = FFALSE, xlim = c(0, 16), ylim = c(0, 0.2)) : 
+  object 'FFALSE' not found
+> hist(x,freq=FALSE,xlim=c(0,16),ylim=c(0,0.2))
+> curve(dchisq col="red",lwd=2,add=t)
+Error: unexpected symbol in "curve(dchisq col"
+> curve(dchisq(x,df=5),from=0,to=15,n=50000 col="red",lwd=2,add=t)
+Error: unexpected symbol in "curve(dchisq(x,df=5),from=0,to=15,n=50000 col"
+> curve(dchisq(x,df=5),from=0,to=15,n=50000,col="red",lwd=2,add=t)
+> hist(x,freq=FALSE,xlim=c(0,16),ylim=c(0,0.2))
+> curve(dchisq(x,df=5),from=0,to=15,n=50000,col="red",lwd=2,add=t)
+> hist(x,freq=FALSE,xlim=c(0,16),ylim=c(0,0.2))
+> curve(dchisq(x,df=5),from=0,to=15,n=50000,col="red",lwd=2,add=T)
+
+
+
+
+
+
+
+> > > > > > > > 
+> x=1
+> df=25
+> dt(x,df)
+[1] 0.237211
+
+
+
+
+> > > > > 
+> x = seq(-6, 6, length=100)
+> df = c(1, 4, 10, 30)
+> color = c('red', 'green', 'blue', 'yellow', 'pink')
+> plot(x, dnorm(x), type='l', lty=2, xlab='t-value', ylab='Density', main="Comparison of t-distribution", col="black")
+> # add t-distribution to plot
+> for (i in 1:4) { lines(x, dt(x, df[i]), col=color[i]) }
+> # add a lengend
+> legend('topright', c('df=1', 'df=4', 'df=10', 'df=30', 'normal', col=color, title='t-distribution', lty=c(1, 1, 1, 1, 2))
++ )
+> legend('topright', c('df=1', 'df=4', 'df=10', 'df=30', 'normal'), col=color, title='t-distribution', lty=c(1, 1, 1, 1, 2))
+> plot(x, dnorm(x), type='l', lty=2, xlab='t-value', ylab='Density', main="Comparison of t-distribution", col="black")
+> for (i in 1:4) { lines(x, dt(x, df[i]), col=color[i]) }
+> legend('topright', c('df=1', 'df=4', 'df=10', 'df=30', 'normal'), col=color, title='t-distribution', lty=c(1, 1, 1, 1, 2))
+> 

@@ -1,0 +1,12 @@
+>  n=13p=0.7
+Error: unexpected symbol in " n=13p"
+>  n=13;p=0.7
+> y=dbinom(6,size=n,prob=p)
+> y
+[1] 0.0441524
+> ppbinom(9,size=n,prob=p)
+Error: could not find function "ppbinom"
+> 
+> pbinom(9,size=n,prob=p)
+[1] 0.5793944
+> 

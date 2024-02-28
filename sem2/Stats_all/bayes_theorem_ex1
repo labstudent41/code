@@ -1,0 +1,8 @@
+> BT=function(pR,pW,pWR){pRW=(pR*pWR)/pW}
+> pR=0.30
+> pW=0.50
+> pWR=0.10
+> x=BT(pR,pW,pWR)
+> x
+[1] 0.06
+> 

@@ -1,0 +1,73 @@
+import java.awt.*;
+import javax.swing.*;
+
+
+public class Resume extends JFrame {
+
+	public Resume() {
+		setUIFont(new javax.swing.plaf.FontUIResource("Monospace", Font.BOLD, 18));
+		JFrame jf = new JFrame("Swing");
+		jf.setSize(800, 600);
+		jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		jf.setLayout(new FlowLayout());
+
+		JPanel jp = new JPanel(new GridLayout(6, 6));
+
+		JLabel l1 = new JLabel("Name");
+		JLabel l2 = new JLabel("Email");
+		JLabel l3 = new JLabel("Qualification");
+		JLabel l4 = new JLabel("Gender");
+		JLabel l5 = new JLabel("Age");
+		JLabel l6 = new JLabel("Address");
+
+		JTextField t1 = new JTextField(20);
+		JTextField t2 = new JTextField(10);
+		String quals[] = {"SSC", "HSC", "Degree"};
+		JComboBox<String> cb = new JComboBox<>(quals);
+		JTextField t3 = new JTextField();
+
+		JPanel gp = new JPanel();
+		JRadioButton rm = new JRadioButton("Male");
+		JRadioButton rf = new JRadioButton("Female");
+		ButtonGroup bg = new ButtonGroup();
+		bg.add(rm); bg.add(rf);
+		gp.add(rm); gp.add(rf);
+
+		// l1.setBounds(0, 0, 200, 20);
+		// t1.setBounds(200, 0, 200, 20);
+		// l2.setBounds(0, 20, 200, 20);
+		// t2.setBounds(200, 20, 200, 20);
+		// l3.setBounds(0, 40, 200, 20);
+		// cb.setBounds(200, 40, 200, 20);
+		// l5.setBounds(0, 70, 200, 20);
+		// rm.setBounds(200, 70, 100, 20);
+		// rf.setBounds(300, 70, 100, 20);
+		// l6.setBounds(0, 100, 200, 40);
+		// t3.setBounds(200, 100, 400, 80);
+
+		jp.add(l1); jp.add(t1);
+		jp.add(l2); jp.add(t2);
+		jp.add(l3); jp.add(cb);
+		jp.add(l4); jp.add(gp);
+		jp.add(l5); jp.add(t3);
+		jp.add(l6); jp.add(t3);
+
+		jf.add(jp);
+		jf.setVisible(true);
+	}
+
+	public static void setUIFont (javax.swing.plaf.FontUIResource f){
+    java.util.Enumeration<Object> keys = UIManager.getDefaults().keys();
+    while (keys.hasMoreElements()) {
+      Object key = keys.nextElement();
+      Object value = UIManager.get (key);
+      if (value instanceof javax.swing.plaf.FontUIResource)
+        UIManager.put (key, f);
+      }
+    }
+
+	public static void main(String args[]) {
+		System.out.println("Resume");
+		new Resume();
+	}
+}

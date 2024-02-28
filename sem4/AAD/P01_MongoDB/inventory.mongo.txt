@@ -1,0 +1,43 @@
+use vartak
+
+db.createCollection("inventory")
+db.inventory.insertMany([
+    {
+	id: 1,
+	item: { name: "Coffee", code: 101 },
+	quantity: 20,
+	tags: ["Hot", "Caffeine"]
+    },
+    {
+	id: 2,
+	item: { name: "Tea", code: 102 },
+	quantity: 15,
+	tags: ["Hot"]
+    },
+    {
+	id: 3,
+	item: { name: "Faluda", code: 103 },
+	quantity: 20,
+	tags: ["Cold"]
+    }
+])
+
+db.inventory.findOne({ quantity: { $eq: 20 } })
+db.inventory.find({ quantity: { $eq: 20 } })
+
+db.inventory.update(
+    { id: 2 },
+    { $set: { quantity: 12, 'item.code': 104 } }
+)
+
+db.inventory.find({ quantity: { $gt: 12 } })
+db.inventory.find({ 'item.name': "Tea" })
+db.inventory.find({ id: { $in: [1, 3] } })
+
+db.inventory.updateMany(
+    { quantity: 20 },
+    { $set: { quantity: 25 } }
+)
+
+db.inventory.deleteMany({ tags: { $in: ["Hot"] } })
+db.inventory.deleteOne({ id: 3 })

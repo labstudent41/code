@@ -1,0 +1,10 @@
+> a=13
+> b=65
+> opar=par(mfrow=c(2,2))
+> curve(dunif(x,min=a,max=b),from=a-1,to=b+1,xlab="y",ylab="f(y)",main="Probability density function for unif(13,65)")
+> curve(punif(x,min=a,max=b),from=a-1,to=b+1,xlab="y",ylab="f(y)",main="cdf for unif(13,65)")
+> curve(qunif(x,min=a,max=b),from=0,to=1,xlab="p",ylab="f(p)",main="Quartile function for unif(13,65)")
+> rand_unif=runif(999,min=a,max=b)
+> hist(rand_unif,probability=TRUE,main="Random draws from unif(13,65)")
+> curve(dunif(x,min=a,max=b),add=TRUE,col="red")
+> 

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="80 73 967 415.5" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="text" id="id1416558984" fill="black" latexdraw:position="bl">
+            <text x="162.0" y="159.0">Student</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id1349651713">
+            <rect x="117.0" y="117.0" width="138.5" height="75.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1520945530" fill="black" latexdraw:position="bl">
+            <text x="513.0" y="163.0">Library Information System</text>
+        </g>
+        <g latexdraw:type="ellipse" id="id459343986">
+            <ellipse cx="582.5" cy="159.25" rx="108.5" ry="65.25" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1903621905" fill="black" latexdraw:position="bl">
+            <text x="899.0" y="163.0">Display of Book</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id70020848">
+            <rect x="855.0" y="127.0" width="171.0" height="70.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1052026124">
+            <polyline points="256.0,159.0 453.0,159.0 474.0,159.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1052026124)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1742164879">
+            <polyline points="691.0,158.0 856.0,160.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1742164879)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1955206024">
+            <polyline points="256.0,132.0 481.0,134.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1955206024)"/>
+        </g>
+        <g latexdraw:type="text" id="id697174944" fill="black" latexdraw:position="bl">
+            <text x="324.0" y="129.0">Book Request</text>
+        </g>
+        <g latexdraw:type="text" id="id70281532" fill="black" latexdraw:position="bl">
+            <text x="320.0" y="156.0">Library Card</text>
+        </g>
+        <g latexdraw:type="text" id="id171638496" fill="black" latexdraw:position="bl">
+            <text x="335.0" y="230.0">Book</text>
+        </g>
+        <g latexdraw:type="text" id="id1937473870" fill="black" latexdraw:position="bl">
+            <text x="717.0" y="153.0">Demand book info</text>
+        </g>
+        <g latexdraw:type="text" id="id447721499" fill="black" latexdraw:position="bl">
+            <text x="146.0" y="402.0">Guest</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id876886653">
+            <rect x="101.0" y="360.0" width="138.5" height="75.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id2103357242" fill="black" latexdraw:position="bl">
+            <text x="497.0" y="406.0">Library Information System</text>
+        </g>
+        <g latexdraw:type="ellipse" id="id1871839955">
+            <ellipse cx="566.5" cy="402.25" rx="108.5" ry="65.25" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1733188131" fill="black" latexdraw:position="bl">
+            <text x="894.0" y="406.0">Admin</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id1175204098">
+            <rect x="839.0" y="357.5" width="139.5" height="94.0" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id753897416">
+            <polyline points="240.0,402.0 437.0,402.0 458.0,402.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-start="url(#arrow0-753897416)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1175897742">
+            <polyline points="675.0,401.0 840.0,403.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1175897742)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1639279471">
+            <polyline points="240.0,375.0 465.0,377.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1639279471)"/>
+        </g>
+        <g latexdraw:type="text" id="id806996725" fill="black" latexdraw:position="bl">
+            <text x="288.0" y="372.0">Fill Registeration Form</text>
+        </g>
+        <g latexdraw:type="text" id="id1473350533" fill="black" latexdraw:position="bl">
+            <text x="304.0" y="399.0">Room Info</text>
+        </g>
+        <g latexdraw:type="text" id="id1602144570" fill="black" latexdraw:position="bl">
+            <text x="288.0" y="441.0">Fill Cancellation Form</text>
+        </g>
+        <g latexdraw:type="text" id="id1257512884" fill="black" latexdraw:position="bl">
+            <text x="684.0" y="397.0">Reservation / Cancellation
+Info</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id2022791348">
+            <polyline points="576.0,225.0 576.0,239.0 193.0,241.0 193.0,195.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-2022791348)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1032635463">
+            <polyline points="238.0,427.0 461.0,426.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1032635463)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id415758095">
+            <polyline points="838.0,365.0 658.0,364.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-415758095)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1805114972">
+            <polyline points="662.0,435.0 840.0,436.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-1805114972)"/>
+        </g>
+        <g latexdraw:type="text" id="id1432767808" fill="black" latexdraw:position="bl">
+            <text x="714.0" y="354.0">Hotel Info</text>
+        </g>
+        <g latexdraw:type="text" id="id1897005007" fill="black" latexdraw:position="bl">
+            <text x="707.0" y="454.0">Guest Info</text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="auto" id="arrow1-1052026124">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="0.694" id="arrow1-1742164879">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="0.509" id="arrow1-1955206024">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="180" id="arrow0-753897416">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="0.694" id="arrow1-1175897742">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="0.509" id="arrow1-1639279471">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="270" id="arrow1-2022791348">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="359.743" id="arrow1-1032635463">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="180.318" id="arrow1-415758095">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+        <marker overflow="visible" markerUnits="userSpaceOnUse" orient="0.322" id="arrow1-1805114972">
+            <path d="M 0.0 0.0 L -9.304166666666667 -3.322916666666667 L -9.304166666666667 0.0 L -9.304166666666667 3.322916666666667 z" fill="black" stroke="black" latexdraw:arrSizeNum="2" latexdraw:tbarSizeNum="5"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:centreHoriz>false</latexdraw:centreHoriz>
+            <latexdraw:positionVert/>
+            <latexdraw:zoom>0.95</latexdraw:zoom>
+            <latexdraw:vpx>0.499</latexdraw:vpx>
+            <latexdraw:vpy>0.402</latexdraw:vpy>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

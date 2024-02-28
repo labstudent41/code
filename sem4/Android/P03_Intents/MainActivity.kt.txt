@@ -1,0 +1,26 @@
+package com.example.intents
+
+import android.content.Intent
+import android.net.Uri
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.ViewFlipper
+
+class MainActivity : AppCompatActivity() {
+	val name = "SecondActivity"
+	private lateinit var goBtn: Button
+
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+		goBtn = findViewById(R.id.goBtn)
+
+		goBtn.setOnClickListener {
+			intent = Intent(this, SecondActivity::class.java)
+			intent.putExtra("name", name)
+			startActivity(intent)
+		}
+	}
+}

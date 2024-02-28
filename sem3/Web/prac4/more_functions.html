@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+<head>
+	<title> Functions </title>
+	<link href="../styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+		
+	<form onsubmit="validNum(); return false;" name="validate">
+		<label for="input">Enter text: <label>
+		<input name="input" type="text">
+		<button type="submit">Submit</button>
+	</form>
+
+		
+	<script type="text/javascript">
+		function validNum() {
+			let num = document.validate.input.value;
+			console.log(num);
+			if (isNaN(num)) {
+				alert("Is not a number");
+			} else {
+				alert("Is a number");
+			}
+		}
+	</script>
+	
+</body>

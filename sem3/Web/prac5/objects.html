@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+		body {
+			color: aqua;
+			background-color: black;
+		}
+		button {
+			background-color: aqua;
+			padding: 10px 20px;
+			border: 0;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<script>
+	var googleWindow;
+	function say() {
+		window.alert("Hello");
+	}
+	function windowOpen() {
+		googleWindow = window.open("../assets/Desert.jpg",
+			"Google", "width=400, height=300");
+	}
+	function windowClose() {
+		googleWindow = googleWindow.close();
+		return false;
+	}
+	function windowBlur() {
+		googleWindow.focus();
+		setTimeout(() => {
+			googleWindow.blur();
+		  }, 3000);
+	}
+	function windowFocus() {
+		googleWindow.focus();
+	}
+</script>
+
+	<button onclick="say()">Show message</button>
+	<button onclick="windowOpen()">Open</button>
+	<button onclick="windowClose()">Close</button>
+	<button onclick="windowFocus()">Focus</button>
+	<button onclick="windowBlur()">Blur</button>
+
+</body>
+</html>

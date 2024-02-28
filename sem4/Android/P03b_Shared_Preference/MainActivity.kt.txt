@@ -1,0 +1,35 @@
+package com.example.sharedpreference
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.EditText
+
+class MainActivity : AppCompatActivity() {
+	private lateinit var nameText: EditText
+	private lateinit var ageText: EditText
+
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_main)
+		nameText = findViewById(R.id.nameText)
+		ageText = findViewById(R.id.ageText)
+	}
+
+	override fun onResume() {
+		super.onResume()
+		val SP = getSharedPreferences("MySharedPreference", MODE_PRIVATE)
+		val nameSP = SP.getString("name", "")
+		val ageSP = SP.getString("age", "")
+		nameText.setText(nameSP)
+		ageText.setText(ageSP)
+	}
+
+	override fun onPause() {
+		super.onPause()
+		val SP = getSharedPreferences("MySharedPreference", MODE_PRIVATE)
+		val edit = SP.edit()
+		edit.putString("name", nameText.text.toString())
+		edit.putString("age", ageText.text.toString())
+		edit.apply()
+	}
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="170 66 809.5 410.5" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id512446525">
+            <rect x="513.0" y="87.0" width="171.5" height="69.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id339160155">
+            <polyline points="512.0,118.55803571428584 684.1602316602317,117.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id2069587465">
+            <rect x="518.0" y="229.0" width="171.5" height="69.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1653553480">
+            <polyline points="517.0,260.55803571428584 689.1602316602317,259.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1950429383">
+            <rect x="511.0" y="373.0" width="171.5" height="82.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id2117058026">
+            <polyline points="510.0,404.55803571428584 682.1602316602317,403.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id2029276191">
+            <rect x="192.0" y="228.0" width="171.5" height="69.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1389366830">
+            <polyline points="191.0,259.55803571428584 363.1602316602317,258.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1262020583">
+            <rect x="787.0" y="230.0" width="171.5" height="69.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1541205343">
+            <polyline points="786.0,261.55803571428584 958.1602316602317,260.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id2017138533">
+            <rect x="784.0" y="372.0" width="171.5" height="80.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id2096777010">
+            <polyline points="783.0,403.55803571428584 955.1602316602317,402.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id2104045451">
+            <rect x="191.0" y="370.0" width="171.5" height="85.5" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id783781563">
+            <polyline points="190.0,401.55803571428584 362.1602316602317,400.9196428571429 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id701146537" fill="black" latexdraw:position="bl">
+            <text x="571.0" y="106.0">Industry</text>
+        </g>
+        <g latexdraw:type="text" id="id1393674827" fill="black" latexdraw:position="bl">
+            <text x="230.0" y="250.0">D1: Department</text>
+        </g>
+        <g latexdraw:type="text" id="id1400027451" fill="black" latexdraw:position="bl">
+            <text x="564.0" y="251.0">D2: Department</text>
+        </g>
+        <g latexdraw:type="text" id="id435035610" fill="black" latexdraw:position="bl">
+            <text x="833.0" y="251.0">D3: Department</text>
+        </g>
+        <g latexdraw:type="text" id="id784057033" fill="black" latexdraw:position="bl">
+            <text x="236.0" y="391.0">E1: Employee</text>
+        </g>
+        <g latexdraw:type="text" id="id1650179224" fill="black" latexdraw:position="bl">
+            <text x="557.0" y="393.0">D4: Department</text>
+        </g>
+        <g latexdraw:type="text" id="id186585718" fill="black" latexdraw:position="bl">
+            <text x="829.0" y="393.0">D5: Department</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id77893960">
+            <polyline points="602.0,157.0 602.0,228.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1472781419">
+            <polyline points="601.0,190.0 873.0,190.0 873.0,229.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id266204188">
+            <polyline points="602.0,190.0 288.0,190.0 288.0,228.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id30066253">
+            <polyline points="284.0,297.0 284.0,369.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1340123739" fill="black" latexdraw:position="bl">
+            <text x="231.0" y="289.0">name = "sales"</text>
+        </g>
+        <g latexdraw:type="text" id="id1010121106" fill="black" latexdraw:position="bl">
+            <text x="215.0" y="422.0">eid = 1</text>
+        </g>
+        <g latexdraw:type="text" id="id1929308836" fill="black" latexdraw:position="bl">
+            <text x="214.0" y="444.0">name = ABC</text>
+        </g>
+        <g latexdraw:type="text" id="id1058864523" fill="black" latexdraw:position="bl">
+            <text x="522.0" y="433.0">name = "Customer Support"</text>
+        </g>
+        <g latexdraw:type="text" id="id65427612" fill="black" latexdraw:position="bl">
+            <text x="793.0" y="432.0">name = "Quality Assurance" </text>
+        </g>
+        <g latexdraw:type="text" id="id1576852670" fill="black" latexdraw:position="bl">
+            <text x="800.0" y="284.0">name = "Human Resources"</text>
+        </g>
+        <g latexdraw:type="text" id="id2104885706" fill="black" latexdraw:position="bl">
+            <text x="541.0" y="283.0">name = "Production"</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id563802008">
+            <polyline points="670.0,300.0 670.0,338.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id74821169">
+            <polyline points="670.0,338.0 606.0,339.0 606.0,374.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id575804495">
+            <polyline points="668.0,338.0 877.0,340.0 877.0,371.0 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:centreHoriz>false</latexdraw:centreHoriz>
+            <latexdraw:positionVert/>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:vpx>0.5</latexdraw:vpx>
+            <latexdraw:vpy>0.4</latexdraw:vpy>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

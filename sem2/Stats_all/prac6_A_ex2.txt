@@ -1,0 +1,9 @@
+mu=-4
+> sigma=sqrt(3)#std deviation
+> opar=par(mfrow=c(2,2))
+> curve(dnorm(x,mean=mu,sd=sigma),from=mu-4*sigma,to=mu+4*sigma,main="PDF of N(-4,3)")
+> curve(pnorm(x,mean=mu,sd=sigma),from=mu-4*sigma,to=mu+4*sigma,main="CDF of N(-4,3)")
+> curve(qnorm(x,mean=mu,sd=sigma),from=0,to=1,main="QDF of N(-4,3)")
+> draws=rnorm(999,mean=mu,sd=sigma)
+> hist(draws,probability=TRUE)
+> curve(dnorm(x,mean=mu,sd=sigma),add=TRUE,col="red")

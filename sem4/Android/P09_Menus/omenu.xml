@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/First"
+        android:title="Login"/>
+    <item
+        android:id="@+id/Second"
+        android:title="Register"/>
+    <item
+        android:id="@+id/Third"
+        android:title="Setting"
+        />
+    <item
+        android:id="@+id/Fourth"
+        android:title="Share">
+        <menu>
+            <item
+                android:id="@+id/Fifth"
+                android:title="Bluetooth"
+                android:icon="@drawable/ic_bluetooth"
+                />
+            <item
+                android:id="@+id/Sixth"
+                android:title="Mail"
+                android:icon="@drawable/ic_mail"
+                />
+        </menu>
+    </item>
+</menu>

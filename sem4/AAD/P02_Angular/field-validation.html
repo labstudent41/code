@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Field Validation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="" style="text-align: center;">
+	<h3>Try writing in the input field : </h3>
+	<form name="info">
+		<input name="name" ng-model="name" required/>
+	</form>
+	<h3>The validity of input is :-</h3>
+	<h1>{{info.name.$valid}}</h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ng-bind directive</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" style="text-align: center">
+	<h1 style="color: blue">ng-bind Directive</h1>
+	<div ng-controller="myCtrl">
+		Number : <input type="number" ng-model="num1" ng-change="product()" />
+		<br><br>
+		Power : <input type="number" ng-model="num2" ng-change="product()" />
+		<br><br>
+		<b>{{num1}}</b> raised to <b>{{num2}}</b> is
+		<b><span ng-bind="result"></span></b>
+	</div>
+	<script>
+		var app = angular.module("myApp", []);
+		app.controller('myCtrl', ['$scope', function ($scope) {
+			$scope.num1 = 1;
+			$scope.num2 = 1;
+			$scope.result = 1;
+			$scope.product = function () {
+				$scope.result = ($scope.num1 * $scope.num2);
+			}
+		}]);
+	</script>
+</body>
+
+</html>

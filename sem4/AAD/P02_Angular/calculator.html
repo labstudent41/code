@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Calculator</title>
+	<style>
+		body {
+			color: ghostwhite;
+			background-color: black;
+			text-align: center;
+		}
+		h1 { color: aqua; }
+	</style>
+</head>
+
+<body ng-app="myapp">
+	<div ng-controller="control">
+		<h1>Calculator</h1><br><br>
+		<input type="text" ng-model="num1" placeholder="Enter first number" /><br><br>
+		<button ng-click="add()">+</button>
+		<button ng-click="sub()">-</button>
+		<button ng-click="mul()">*</button>
+		<button ng-click="divide()">/</button><br><br>
+		<input type="text" ng-model="num2" placeholder="Enter second number" /><br><br>
+		<br />
+		<h2> = {{val}}</h2>
+	</div>
+	<script>
+		var app = angular.module("myapp", []);
+		app.controller
+			("control",
+				function ($scope) {
+					$scope.add = function () {
+						$scope.val = parseInt($scope.num1) + parseInt($scope.num2);
+					};
+					$scope.sub = function () {
+						$scope.val = $scope.num1 - $scope.num2;
+					};
+					$scope.mul = function () {
+						$scope.val = $scope.num1 * $scope.num2;
+					};
+					$scope.divide = function () {
+						$scope.val = $scope.num1 / $scope.num2;
+					};
+				});
+	</script>
+</body>
+
+</html>

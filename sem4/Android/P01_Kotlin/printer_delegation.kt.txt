@@ -1,0 +1,24 @@
+interface Printer {
+	fun print()
+}
+
+class LaserPrinter : Printer by RealPrinter() {
+	init {
+		println("Laser Printer started")
+	}
+}
+
+class RealPrinter : Printer {
+	init {
+		println("Printer by Real Printer")
+	}
+	override fun print() {
+		println("Printing....")
+	}
+}
+
+fun main() {
+	val laserp = LaserPrinter()
+	laserp.print()
+}
+

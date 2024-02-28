@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ng-controller directive</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js">
+	</script>
+</head>
+
+<body ng-app="app" style="text-align: center">
+	<h1 style="color: blue">ng-click Directive</h1>
+	<h3>Choose your favourite stream : -</h3>
+	<div ng-controller="app">
+		<button class="btn btn-default" ng-click="Science()">
+			Science
+		</button>
+		<button class="btn btn-default" ng-click="Commerce()">
+			Commerce
+		</button>
+		<br>
+		<p>Ye stream <b>{{res}}</b> hai</p>
+	</div>
+	<script>
+		var app = angular.module('app', []);
+		app.controller('app', function ($scope) {
+			$scope.res = "thik"  // default value
+			$scope.Science = function () {
+				return $scope.res = "Ghatak";
+			};
+			$scope.Commerce = function () {
+				return $scope.res = "Sexy";
+			};
+		});
+	</script>
+</body>
+
+</html>

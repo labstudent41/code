@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script>
+		var app = angular.module('UserDB', []);
+		app.controller("UserCtrl", function ($scope) {
+			$scope.items = [{
+				id: 1,
+				name: "Russell Martins",
+				email: "russell@martins.com",
+				password: "nopass",
+				phone: "9321193208"
+			}];
+			$scope.addItem = function (item) {
+				$scope.items.push(item);
+				$scope.item = {};
+			};
+			$scope.removeItem = function (index) {
+				console.log(index);
+				$scope.items.splice(index, 1)
+			};
+			$scope.editItem = function (index) {
+				$scope.editing = $scope.items.indexOf(index);
+			};
+		});
+	</script>
+</head>
+
+<body>
+	<div ng-app="UserDB" class="container" ng-controller="UserCtrl">
+
+		<table class="table table-striped table-bordered">
+			<tr>
+				<td>ID</td>
+				<td><input type="text" class="form-control" ng-model="item.id" /></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" class="form-control" ng-model="item.name" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" class="form-control" ng-model="item.email" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="text" class="form-control" ng-model="item.password" /></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" class="form-control" ng-model="item.phone" /></td>
+			</tr>
+			<tr>
+				<td class="text-right" colspan="2">
+					<button class="btn btn-primary" ng-click="addItem(item)">Add</button>
+				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>Edit</th>
+					<th>Remove</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in items">
+					<td>
+						<span ng-hide="editMode">{{item.id}}</span>
+						<input type="text" ng-show="editMode" ng-model="item.id">
+					</td>
+					<td>
+						<span ng-hide="editMode">{{item.name}}</span>
+						<input type="text" ng-show="editMode" ng-model="item.name">
+					</td>
+					<td>
+						<span ng-hide="editMode">{{item.email}}</span>
+						<input type="text" ng-show="editMode" ng-model="item.email">
+					</td>
+					<td>
+						<span ng-hide="editMode">{{item.phone}}</span>
+						<input type="text" ng-show="editMode" ng-model="item.phone">
+					</td>
+					<td>
+						<i class="glyphicon glyphicon-edit" ng-hide="editMode"
+								ng-click="editMode=true; editItem(item)"></i>
+						<i class="glyphicon glyphicon-saved" ng-show="editMode"
+								ng-click="editMode=false"></i>
+					</td>
+					<td>
+						<i class="glyphicon glyphicon-trash" ng-click="removeItem($index)"></i>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+</body>
+
+</html>

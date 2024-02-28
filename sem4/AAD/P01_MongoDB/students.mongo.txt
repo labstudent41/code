@@ -1,0 +1,13 @@
+use vartak
+
+db.createCollection("students")
+db.students.insertOne({ id: 1, name: "Russel", course: "SYCS" })
+db.students.insertMany([
+    {id: 2, name: "Tanmay", course: "TYCS"},
+    {id: 3, name: "Tanish", course: "FYCS"},
+    {id: 4, name: "Ranjit", course: "SYCS"},
+    {id: 5, name: "Kalyan", course: "TYCS"}
+])
+
+db.students.find()
+db.students.find().limit(2)

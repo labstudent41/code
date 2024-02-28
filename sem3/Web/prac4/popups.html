@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+<head>
+	<title> Functions </title>
+	<link href="../styles.css" rel="stylesheet">
+
+	<script type="text/javascript">
+
+		function primeall() {
+			document.querySelector("#output").innerHTML = `Printing prime numbers<br>`;
+			let lb = parseInt(prompt("Enter lower bound"));
+			let ub = parseInt(prompt("Enter upper bound"));
+			for (i = lb; i <= ub; i++) {
+				found = false
+				for (j = 2; j <= i/2; i++) {
+					if (i % j == 0) {
+						found = true
+						break
+					}
+				}
+				if (found) {
+					document.querySelector("#output").innerHTML += `${i}<br>`;
+				}
+			}
+		}
+
+		function evalexpr() {
+			let a = parseInt(prompt("Enter first number"));
+			let b = parseInt(prompt("Enter second number"));
+			let op = prompt("Enter operation");
+			expr = `${a} ${op} ${b}`;
+			result = eval(expr);
+			document.querySelector("#output").innerHTML = `${expr} = ${result}`;
+		}
+
+
+	</script>
+</head>
+
+<body>
+
+	<div style="margin: 50px 10px 50px 10px; text-align: center">
+		<br>
+
+		<button onclick="primeall();" class="box button">
+			Print prime numbers</button>
+		<button onclick="evalexpr();" class="box button">
+			Evaluate an expression</button>
+
+	</div>
+	<div class="box">
+		<h3 class="box-heading">Output</h3>
+		<div id="output" class="box-content">
+			<div style="color: darkgray; text-align: center">
+				&lt; Run a function to see the output &gt;
+			</div>
+		</div>
+	</div>
+
+</body>

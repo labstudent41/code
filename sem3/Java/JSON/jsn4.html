@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students=[{
+            "student":"Ravi",
+            "address":"Vasai",
+            "phone":"1234"
+        },
+    
+       {
+           "student":"david",
+           "address":"nsp",
+           "phone":"9874"
+       },
+    
+       {
+           "student":"deepk",
+           "address":"virar",
+           "phone":"2323"
+       },
+    
+       {
+            "student":"sppat",
+            "address":"chennai",
+            "phone":"420"
+        },
+    ]
+    console.log("object before deleting:");
+    console.log(students);
+    console.log("using delete keyword for:"+"deleting object at index 0");
+    delete students[0];
+    console.log("object post deleting");
+    console.log(students);
+    console.log("using delete keyword for:"+"deleting object property at index 1");
+    delete students[1].phone;
+    console.log("object post deleting");
+    console.log(students);
+
+    
+
+    </script>
+</body>
+</html>

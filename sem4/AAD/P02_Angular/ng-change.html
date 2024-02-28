@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ng-change directive</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" style="text-align: center;">
+	<div ng-controller="myCtrl">
+		<h1 style="color: blue">ng-change Directive</h1>
+		<h3>Write your crush name</h3>
+		<input type="text" ng-change="myFunc()" ng-model="myValue" />
+		<p>The input field has changed <b>{{count}}</b> times</p>
+		<p>Your crush is <b>{{myValue}}</b></p>
+	</div>
+	<script>
+		angular.module('myApp', []).controller('myCtrl', ['$scope', function ($scope) {
+			$scope.count = 0;
+			$scope.myFunc = function () {
+				$scope.count++;
+			};
+		}]);
+	</script>
+</body>
+
+</html>

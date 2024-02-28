@@ -1,0 +1,17 @@
+# Installing Node Red
+
+(1) Update the system by running the following command in terminal :-
+sudo apt update && sudo apt upgrade
+
+
+(2) Go to nodered.org and find installation instruction for Rasberry Pi
+You will find a bash command which looks like :-
+
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+Copy and paste that in terminal.
+
+
+(3) Once the installation is finished, it will ask you some simple questions, use your 🧠 and answer them.
+Most of them can be left to default settings i.e. just press <Enter>
+Say 'no' to anything related to security or else it might try set a password or something which you don't want to deal with.
