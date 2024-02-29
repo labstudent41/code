@@ -31,9 +31,7 @@
         android:id="@+id/addName"
         android:layout_width="150sp"
         android:layout_gravity="center"
-        android:background="@color/design_default_color_primary"
         android:text="Add Name"
-        android:textColor="#ffffff"
         android:textSize="20sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"/>
@@ -43,9 +41,7 @@
         android:id="@+id/printName"
         android:layout_width="150sp"
         android:layout_gravity="center"
-        android:background="@color/design_default_color_primary"
         android:text="Print Name"
-        android:textColor="#ffffff"
         android:textSize="20sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"/>
@@ -64,8 +60,7 @@
             android:layout_margin="20sp"
             android:text="Name\n\n"
             android:textSize="22sp"
-            android:padding="10sp"
-            android:textColor="#dddddd"/>
+            android:padding="10sp" />
 
         <!-- Text view to get all ages -->
         <TextView
@@ -77,10 +72,10 @@
             android:layout_margin="20sp"
             android:text="Age\n\n"
             android:textSize="22sp"
-            android:padding="10sp"
-            android:textColor="#dddddd"/>
+            android:padding="10sp" />
 
     </LinearLayout>
 
 
 </LinearLayout>
+
