@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android servuce"
+        android:textSize="34sp"
+        />
+
+
+    <Button
+        android:id="@+id/btstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="service start"
+        android:textSize="24sp"
+        />
+
+
+    <Button
+        android:id="@+id/btstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="service stop"
+        android:textSize="24sp"
+        />
+
+
+
+
+
+</LinearLayout>
