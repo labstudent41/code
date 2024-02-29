@@ -1,0 +1,29 @@
+import java.util.Scanner
+fun main() {
+    var sc=Scanner(System.`in`);
+    println("Enter a: ")
+    val a = sc.nextInt();
+    println("Enter b: ")
+    val b = sc.nextInt();
+    println("Enter c: ")
+    val c = sc.nextInt();
+    
+    if(a>b){
+        if(b>c){
+            println("$a is greater than $b and $c ")
+        }
+    }
+    else if(b>a){
+        if(a>c){
+            println("$b is greater than $a and $c ")
+        }
+    }
+    else if(c>b){
+        if(b>a){
+            println("$c is greater than $a and $b ")
+        }
+    }
+    else{
+        println("invalid input")
+    }
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner
+fun main() {
+    var sc=Scanner(System.`in`)
+    print("Enter any string: ")
+    val inputString = sc.next() 
+    val reversedString = reverseString(inputString)
+ 
+
+    println("Original String: $inputString")
+    println("Reversed String: $reversedString")
+
+    if (inputString == reversedString){
+        println("$inputString is a palindrome...")
+    }
+    else{
+        println("$inputString is not a palindrome...")
+    }
+}
+
+fun reverseString(input: String): String {
+    var reversed = ""
+    for (i in input.length - 1 downTo 0) {
+        reversed += input[i]
+    }
+    return reversed
+
+}
+

@@ -1,0 +1,23 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    print("Enter a positive integer: ")
+    val n = scanner.nextInt()
+
+    if (n < 0) {
+        println("Please enter a positive integer.")
+    } else {
+        val sum = calculateSum(n)
+        println("Sum of natural numbers up to $n: $sum")
+    }
+}
+
+fun calculateSum(n: Int): Int {
+    var sum = 0
+    for (i in 1..n) {
+        sum += i
+    }
+    return sum
+}

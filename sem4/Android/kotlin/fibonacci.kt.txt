@@ -1,0 +1,20 @@
+import java.util.Scanner
+fun main() {
+    println("Enter the range: ")
+    var sc=Scanner(System.`in`)
+    val n = sc.nextInt()
+
+    // val n = 10 // Change the value of n to the desired number of terms in the Fibonacci series
+    var first = 0
+    var second = 1
+
+    print("Fibonacci Series up to $n terms: ")
+
+    for (i in 1..n) {
+        print("$first, ")
+
+        val nextTerm = first + second
+        first = second
+        second = nextTerm
+    }
+}

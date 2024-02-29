@@ -1,0 +1,24 @@
+class Person(firstName: String, lastName: String) {
+    // Properties
+    var firstName: String
+    var lastName: String
+
+    // Initialization block (executed when an object is created)
+    init {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+
+    // Method to display the full name
+    fun displayFullName() {
+        println("Full Name: $firstName $lastName")
+    }
+}
+
+fun main() {
+    // Creating an object of the Person class and providing values to the constructor
+    val person = Person("John", "Doe")
+
+    // Calling a method on the object
+    person.displayFullName()
+}

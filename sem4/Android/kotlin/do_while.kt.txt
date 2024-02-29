@@ -1,0 +1,13 @@
+// program to find factorial
+fun main(){
+    var a=5
+    var fact=1
+    var i=1
+    do{
+        fact=fact*i
+        i++
+    }
+    while(i<=a)
+        print("factorial of $a is ${fact}")
+    
+}

@@ -1,0 +1,17 @@
+fun main() {
+    // Get input from the user
+    print("Enter a number: ")
+    val number = readLine()?.toIntOrNull()
+
+    // Check if the input is a valid number
+    if (number != null) {
+        // Print the multiplication table
+        println("Multiplication table for $number:")
+        for (i in 1..10) {
+            val result = number * i
+            println("$number * $i = $result")
+        }
+    } else {
+        println("Invalid input. Please enter a valid number.")
+    }
+}

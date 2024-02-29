@@ -1,0 +1,12 @@
+fun main(){
+    println("Enter a solar entity:")
+    var planet=readLine()
+    when (planet){
+        "earth"->print("Earth is a planet")
+        "moon"->print("Moon is a satellite")
+        "sun"->print("Sun is a Star")
+        "halley"->print("Halley is a comet")
+        else->print("invalid input")
+        
+    }
+}

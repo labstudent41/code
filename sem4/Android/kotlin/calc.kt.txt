@@ -1,0 +1,37 @@
+import java.util.Scanner
+fun main(){
+    var sc=Scanner(System.`in`);
+    println("Enter the value for a: ")
+    val a = sc.nextDouble()
+    println("Enter the value for b: ")
+    val b = sc.nextDouble()
+    
+    println("Enter the operator (+,-,*,/) ")
+    val opr = sc.next()
+
+    if (opr == "+"){
+        var ans = a+b
+        println("Addition of $a and $b is: $ans")
+    }
+    else if (opr == "-"){
+        var ans = a-b
+        println("subtraction of $a and $b is: $ans")
+    }
+    else if (opr == "*"){
+        var ans = a*b
+        println("Product of $a and $b is: $ans")
+    }
+    else if (opr == "/"){
+        if(a!=0.0){
+        var ans = a/b
+        println("Division of $a and $b is: $ans")
+        }
+        else{
+            println("Error: divide by zero")
+            println("try again with another input")
+        }
+    }
+    else{
+        println("Enter a valid input and try again")
+    }
+}

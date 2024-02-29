@@ -1,0 +1,6 @@
+
+class car(var brand:String,var year:Int){}
+    fun main(){
+        var c1 = car("Ford",1998)
+        println("Brand: "+c1.brand + " Year: " + c1.year)
+    }

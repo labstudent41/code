@@ -1,0 +1,12 @@
+class fileProcessor{
+    val data:String by lazy{
+        readfile()
+    }
+    private fun readfile() :String{
+        return "Reading from the data file..."
+    }
+}
+fun main(){
+    val fp = fileProcessor()
+    println(fp.data)
+}

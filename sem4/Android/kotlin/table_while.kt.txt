@@ -1,0 +1,16 @@
+// kotlin code to print a table by user input
+import java.util.Scanner
+fun main(){
+    print("Enter a number: ")
+    var sc=Scanner(System.`in`)
+    val num = sc.nextInt()
+    var i = 1
+    println("Multiplication table for $num:")
+    while(i<=10){
+        var r = num * i
+        println("$num * $i = $r")
+        i++
+    }
+    // Close the scanner
+    scanner.close()
+}

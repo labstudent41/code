@@ -1,0 +1,16 @@
+open class vehicle{
+    fun display(){
+        println(" hello, this is the class vehicle...")
+    }
+}
+class car:vehicle(){
+    fun show(){
+        println(" hello, this is the class car...")
+    }
+}
+fun main(){
+    var c1 = car()
+    c1.show()
+    c1.display()
+    
+}
