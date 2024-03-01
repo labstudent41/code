@@ -31,7 +31,7 @@ def C(s, i):
     else:
         print("Rejected")
 
-s1 = 'abac$cabaz'  # accepted
+s1 = 'abac$caabaz'  # accepted
 s2 = 'abc$az'  # Rejected
 # s = input("Enter the string: ")
 A(s1, 0)

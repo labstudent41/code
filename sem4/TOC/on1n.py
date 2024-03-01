@@ -60,7 +60,7 @@ tm = TM("000111")
 result = tm.run()
 print(f"Result: {result}")
 
-                
-            
-            
-            
+
+
+
+

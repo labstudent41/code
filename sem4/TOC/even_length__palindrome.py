@@ -86,7 +86,7 @@ class TM:
             else:
                 result=False
         return result
-                         
+
     def run(self):
         while self.state not in ['accept', 'reject']:
             self.step()
@@ -97,7 +97,7 @@ tm = TM("bbaaaabb#")
 result = tm.run()
 print(f"Result: {result}")
 
-                
-            
-            
-            
+
+
+
+
