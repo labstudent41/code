@@ -1,0 +1,11 @@
+                              KMonad: Guided tour
+
+  Welcome to the KMonad configuration tutorial. This document aims to explain:
+  1. The configuration syntax
+  2. The required information
+  3. All possible configuration options
+
+  This document should be a runnable configuration, so with some tweaks to the
+  `defcfg` block (see below) you should be able to try out all the examples
+  interactively.
+
