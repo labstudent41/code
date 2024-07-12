@@ -1,0 +1,80 @@
+import 'package:flutter/material.dart';
+import 'welcome.dart';
+
+void main(){
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "flutter demo",
+      theme: ThemeData(
+        primarySwatch: Colors.cyan,
+      ),
+      home: Form(),
+    );
+  }
+}
+class Form extends StatefulWidget {
+  const Form({Key? key}) :super(key: key);
+  @override
+  _FormState createState() => _FormState();
+}
+
+class _FormState extends State<Form> {
+  TextEditingController _name=TextEditingController();
+  TextEditingController _email=TextEditingController();
+  TextEditingController _phone=TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding:const EdgeInsets.all(8.0),
+              child:TextField(
+                controller:_name,
+                decoration:InputDecoration(
+                    border:OutlineInputBorder(),
+                    labelText:"Enter your name"
+                ),
+              ),
+            ),
+            Padding(
+              padding:const EdgeInsets.all(8.0),
+              child:TextField(
+                controller:_email,
+                decoration:InputDecoration(
+                    border:OutlineInputBorder(),
+                    labelText:"Enter your email"
+                ),
+              ),
+            ),
+            Padding(
+              padding:const EdgeInsets.all(8.0),
+              child:TextField(
+                controller:_phone,
+                decoration:InputDecoration(
+                    border:OutlineInputBorder(),
+                    labelText:"Enter your phone"
+                ),
+              ),
+            ),
+            ElevatedButton(onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>WelcomePage(name:_name.text,email:_email.text,phone:_phone.text)));
+            },
+                child: Text("Go next page"))
+          ],
+        ),
+      ),
+    )
+    ;
+  }
+}
+
