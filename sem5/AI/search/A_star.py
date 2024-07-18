@@ -19,7 +19,6 @@ def expand(cityq):
     global result
     total, citystr, thiscity = cityq.get()
     print("\nChoosen Path:  %s   (cost=%s)" % (citystr, total))
-    print(cityq)
     if thiscity == goal:
         result = citystr + " : " + str(total)
         return
