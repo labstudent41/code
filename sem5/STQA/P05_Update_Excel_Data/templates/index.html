@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Student Records</title>
+	<style>
+		body {
+			background-color: #1b1b1b;
+			color: ghostwhite;
+		}
+		table, th, td {
+			border-collapse: collapse;
+		}
+		#dataTable th {
+			border-bottom: 1px solid white;
+			padding: 1em 1em
+		}
+		#dataTable td {
+			border-bottom: 1px solid gray;
+			padding: 0.5em 1em
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Update Student Records</h1>
+
+	<form name="updateForm">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Update Age</td>
+				<td><input type="number" name="age"></td>
+			</tr>
+			<tr>
+				<td>Update Grade</td>
+				<td><input type="text" name="grade" maxlength=3></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+	<p id="msg">Enter details to update.</p>
+
+	<table id="dataTable">
+		<thead>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Grade</th>
+		</thead>
+		<tbody>
+			{% for row in data %}
+			<tr>
+				<td>{{ row['Name'] }}</td>
+				<td>{{ row['Age'] }}</td>
+				<td>{{ row['Grade'] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<script>
+		document.updateForm.addEventListener("submit", function(event) {
+			event.preventDefault()
+			var name = document.updateForm.name.value;
+			var age = document.updateForm.age.value;
+			var grade = document.updateForm.grade.value.toUpperCase();
+			var msg = document.getElementById('msg')
+
+			if (name === "" || (age === "" && grade === "")) {
+				msg.innerHTML = "Enter Name and either updated age or grade.";
+				return
+			}
+
+			var table = document.getElementById('dataTable')
+			var rows = table.rows
+			var rowIndex = -1;
+
+			for (let i = 0; i < rows.length; i++) {
+				if (rows[i].cells[0].innerHTML === name) {
+					rowIndex = i;
+					break;
+				}
+			}
+
+			if (rowIndex === -1) {
+				msg.innerHTML = "Student Record not found in table.";
+				return
+			}
+
+			if (rows[rowIndex].cells[1].innerHTML === age) {
+				msg.innerHTML = "The updated age is the same as the old age.";
+				return
+			}
+
+			if (grade !== "") {
+				if (rows[rowIndex].cells[2].innerHTML === grade) {
+					msg.innerHTML = "The updated grade is the same as the old grade.";
+					return
+				}
+				const gradeRE = /^[A-F]\+{0,2}$/;
+				if (!gradeRE.test(grade)) {
+					msg.innerHTML = "Grade can only be from A to F followed by + or ++";
+					return
+				}
+				rows[rowIndex].cells[2].innerHTML = grade;
+			}
+
+			if (age !== "") {
+				rows[rowIndex].cells[1].innerHTML = age;
+			}
+
+			msg.innerHTML = "Student record updated successfully!";
+			document.updateForm.reset();
+		})
+	</script>
+</body>
+
+</html>
+
