@@ -1,20 +1,20 @@
 import socket
 import ssl
 
-port = 4423
-certfile = 'localhost.crt'
-keyfile = 'localhost.key'
-
+port = 8000
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('0.0.0.0', port))
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+sock.bind(('127.0.0.1', port))
 sock.listen(5)
 
+certfile = 'localhost.crt'
+keyfile = 'localhost.key'
 context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
 context.load_cert_chain(certfile, keyfile)
-print("Server Listening at port", port)
+print("Server listening at port", port)
 
 while True:
-    client_socket, client_address = server_socket.accept()
+    client_socket, client_address = sock.accept()
     ssl_client_socket = context.wrap_socket(client_socket, server_side=True)
 
     try:

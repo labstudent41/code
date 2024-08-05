@@ -1,7 +1,6 @@
 def encrypt(text, s):
     result = ""
-    for i in range(len(text)):
-        char = text[i]
+    for char in text:
         if char.isupper():
             result += chr((ord(char) + s - 65) % 26 + 65)
         elif char.islower():
@@ -12,8 +11,7 @@ def encrypt(text, s):
 
 def decrypt(text, s):
     result = ""
-    for i in range(len(text)):
-        char = text[i]
+    for char in text:
         if char.isupper():
             result += chr((ord(char) - s - 65) % 26 + 65)
         elif char.islower():
@@ -22,12 +20,13 @@ def decrypt(text, s):
             result += char
     return result
 
-text = input("Enter text to be encrypted:")
-s = int(input("Enter key value:" ))
-encrypted_text = encrypt(text, s)
-print("Text: ", text)
-print("Key: ", s)
-print("Encrypted text:", encrypted_text)
-decrypted_text = decrypt(encrypted_text, s)
-print("Decrypted text:", decrypted_text)
+if __name__ == '__main__':
+    text = input("Enter text to be encrypted: ")
+    key = int(input("Enter key value: " ))
+
+    encrypted_text = encrypt(text, key)
+    print("Encrypted text:", encrypted_text)
+
+    decrypted_text = decrypt(encrypted_text, key)
+    print("Decrypted text:", decrypted_text)
 

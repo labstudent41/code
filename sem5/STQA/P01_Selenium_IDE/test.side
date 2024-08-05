@@ -1,0 +1,479 @@
+{
+  "id": "608cd7a2-e908-49e0-8603-a5cf9bb6cf70",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://duckduckgo.com",
+  "tests": [{
+    "id": "0be7e623-7aa9-40b4-b9a0-515447496b16",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "cfd56cb4-424e-41fe-a7b6-a9741080ba61",
+    "name": "kde",
+    "commands": [{
+      "id": "753def06-d889-4c20-9ca7-e069740f6f6f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "208d011f-0095-460a-82f5-9a9944193bfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1622x1035",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f498493-611a-4b06-96ac-eef34cc15e52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(1) > .nav-link:nth-child(1) > span",
+      "targets": [
+        ["css=.nav-item:nth-child(1) > .nav-link:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='navbarsExampleDefault']/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24eb2ce0-bcd2-47a3-8d62-bbd36765e6a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(6) span",
+      "targets": [
+        ["css=.nav-item:nth-child(6) span", "css:finder"],
+        ["xpath=//div[@id='navbarsExampleDefault']/ul/li[6]/a/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'❤️ Donate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df5b2fa9-dccf-401b-8387-fe85d7a6d590",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Browse",
+      "targets": [
+        ["linkText=Browse", "linkText"],
+        ["css=.button:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Browse')]", "xpath:link"],
+        ["xpath=//div[@id='kMetaStore']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://kde.org/stuff/metastore')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1c8386e-70b7-4e35-abd7-8fd11647409c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.qt",
+      "targets": [
+        ["css=.qt", "css:finder"],
+        ["xpath=//img[@alt='The Qt Company']", "xpath:img"],
+        ["xpath=//section[@id='kPatrons']/div/span[4]/img", "xpath:idRelative"],
+        ["xpath=//span[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12237990-0965-4997-a9c0-c38600974cdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=KDE neon",
+      "targets": [
+        ["linkText=KDE neon", "linkText"],
+        ["css=.col-sm:nth-child(1) > a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'KDE neon')]", "xpath:link"],
+        ["xpath=//section[@id='kLinks']/div/nav/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://neon.kde.org/')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'KDE neon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f918b1-938e-473e-93ff-3c80fa804a1b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "365f28e8-bfed-4754-839b-80354c627362",
+    "name": "mysite",
+    "commands": [{
+      "id": "90a4f0cb-508b-4701-9f04-2fb99f3d938b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b92093ba-c151-4826-8a6c-2b6327e170d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1708x903",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa13e4a-6c7c-403a-afb7-3c800c9c0b71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=📄  My Resume",
+      "targets": [
+        ["linkText=📄  My Resume", "linkText"],
+        ["css=dt:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'📄  My Resume')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/dox/resume.pdf')]", "xpath:href"],
+        ["xpath=//dt[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'📄  My Resume')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cc7e9ea-a6fa-4c68-acc0-29f47866f326",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=🎉  BITS 24",
+      "targets": [
+        ["linkText=🎉  BITS 24", "linkText"],
+        ["css=.menu:nth-child(11) > dt:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'🎉  BITS 24')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bits24.onrender.com')]", "xpath:href"],
+        ["xpath=//dl[3]/dt/a", "xpath:position"],
+        ["xpath=//a[contains(.,'🎉  BITS 24')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d94d7ac-668a-4b44-b695-146c6692c771",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "748b9de1-e525-4c7e-904a-c3ccacac3348",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=🎉  BITS 24",
+      "targets": [
+        ["linkText=🎉  BITS 24", "linkText"],
+        ["css=.menu:nth-child(11) > dt:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'🎉  BITS 24')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bits24.onrender.com')]", "xpath:href"],
+        ["xpath=//dl[3]/dt/a", "xpath:position"],
+        ["xpath=//a[contains(.,'🎉  BITS 24')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f69990ee-c626-4b85-b436-e3158a99d095",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=📧  Contact Info",
+      "targets": [
+        ["linkText=📧  Contact Info", "linkText"],
+        ["css=dt:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'📧  Contact Info')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/contact')]", "xpath:href"],
+        ["xpath=//dt[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'📧  Contact Info')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c3e224e-a9b0-4f65-9f92-28c8ba037375",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Contact Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c43fd0-2298-4e74-8ade-5d6e924cc517",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "abd060a1-43da-407b-b1e6-4023c4d41d69",
+    "name": "vartak",
+    "commands": [{
+      "id": "37a2a78a-2d09-4c37-b5d5-381a1e5a78f8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "095dcce7-a28d-4fb2-a613-3ca4c6845bc7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1708x903",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a41a6cfa-1b68-4e94-81b7-177a5cf18f16",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Departments",
+      "targets": [
+        ["linkText=Departments", "linkText"],
+        ["css=#primary-menu > .menu-item-2384 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Departments')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='primary-menu']/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://avc.ac.in/departments/'])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a77f830c-c7e3-4751-a173-e873a1f329e2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Admission 24-25",
+      "targets": [
+        ["linkText=Admission 24-25", "linkText"],
+        ["css=.pull-right > .adm-high > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Admission 24-25')])[2]", "xpath:link"],
+        ["xpath=//header[@id='apus-header']/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://avc.ac.in/admissions/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3130",
+      "windowTimeout": 2000
+    }, {
+      "id": "857d74b3-6523-4aea-bff6-bebcfbb8ae75",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9802f8dc-af3d-4db1-87d9-2c7dbd6a6d2a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3130}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d60d2a37-212f-4a2a-9cb7-5cda0c1b79fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=First Year B.Sc. Computer Science Merit List",
+      "targets": [
+        ["linkText=First Year B.Sc. Computer Science Merit List", "linkText"],
+        ["css=h4:nth-child(16) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'First Year B.Sc. Computer Science Merit List')]", "xpath:link"],
+        ["xpath=//main[@id='main']/div/div[2]/div/div/div[3]/div/h4[6]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://avc.ac.in/wp-content/uploads/2024/06/First-Year-B.Sc_.-Computer-Science-Merit-List.pdf']", "xpath:href"],
+        ["xpath=//h4[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'First Year B.Sc. Computer Science Merit List')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9155",
+      "windowTimeout": 2000
+    }, {
+      "id": "407312de-8df9-4513-a7f2-0a310de56cda",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9155}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a62af8f-6085-4fd3-92e9-91b7ba092901",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3130}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc44e34d-3784-4989-92d3-5eed6871a283",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#primary-menu > .menu-item-2374 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='primary-menu']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://avc.ac.in/')])[49]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d85fedf4-a797-4ec3-b2d9-fb2b95277c9a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9155}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8abf85b2-601c-4f1f-8ec2-c8f95899d091",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3130}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf156f0-f762-4789-9e6f-b19e6580f8a4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9155}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f293bf71-408d-4284-a3bf-6938486b844a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3130}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f494f29-e803-4c0f-a240-f1af8ae3d3a1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9155}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9e7eac8-3a70-425e-a753-5f6e16affa83",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe4417b1-5f01-4956-b42c-664b89abb32a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3130}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a545b15-af9a-4897-ad33-b305842847d8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cffd53a5-a30d-4003-aa3f-5de75df0aaf6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ea424be-90fb-449e-923d-431620d9d7a1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "36297a2f-81cb-4902-8f46-7ebfcb897227",
+    "name": "duckduckgo",
+    "commands": [{
+      "id": "0c4f0a36-2174-4e84-8dd7-4b3ff56c5999",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fe21568-8c3f-42ea-8b58-f169f1583e4c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1708x903",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f4f7705-cb3b-406c-b451-d168d82d1d28",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchbox_input",
+      "targets": [
+        ["id=searchbox_input", "id"],
+        ["name=q", "name"],
+        ["css=#searchbox_input", "css:finder"],
+        ["xpath=//input[@id='searchbox_input']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_homepage']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb281580-c606-4826-9294-f7ed2d92e1fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchbox_input",
+      "targets": [
+        ["id=searchbox_input", "id"],
+        ["name=q", "name"],
+        ["css=#searchbox_input", "css:finder"],
+        ["xpath=//input[@id='searchbox_input']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_homepage']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "3afe9c33-e0d7-4ff2-9275-d58bfe49032c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchbox_input",
+      "targets": [
+        ["id=searchbox_input", "id"],
+        ["name=q", "name"],
+        ["css=#searchbox_input", "css:finder"],
+        ["xpath=//input[@id='searchbox_input']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_homepage']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2ded3495-09a7-492a-b486-fd4a5eabdfac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm",
+      "targets": [
+        ["css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm", "css:finder"],
+        ["xpath=//article[@id='r1-0']/div[2]/h2/a/span", "xpath:idRelative"],
+        ["xpath=//h2/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selenium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2b396f5-c16e-4aa1-aa59-cb5eaa03099d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "081687d7-42eb-44c2-9229-461aaa30b7e8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0be7e623-7aa9-40b4-b9a0-515447496b16"]
+  }, {
+    "id": "ce5fa174-57ab-4d19-a49c-b528810458fb",
+    "name": "TestSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36297a2f-81cb-4902-8f46-7ebfcb897227", "365f28e8-bfed-4754-839b-80354c627362", "cfd56cb4-424e-41fe-a7b6-a9741080ba61", "abd060a1-43da-407b-b1e6-4023c4d41d69"]
+  }],
+  "urls": ["https://kde.org/", "https://csstudent41.github.io/", "https://avc.ac.in/", "https://duckduckgo.com/"],
+  "plugins": []
+}
