@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Student Info</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1>Student Info</h1>
+	<table id="student-table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>English</th>
+				<th>Hindi</th>
+				<th>Marathi</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for record in data %}
+			<tr>
+				<td>{{ record['ID'] }}</td>
+				<td>{{ record['Name'] }}</td>
+				<td>{{ record['Gender'] }}</td>
+				<td>{{ record['English'] }}</td>
+				<td>{{ record['Hindi'] }}</td>
+				<td>{{ record['Marathi'] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+</body>
+
+</html>
+

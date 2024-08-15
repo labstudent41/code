@@ -1,6 +1,6 @@
 from math import ceil
 
-def rail_fence_encrypt(text, key):
+def encrypt(text, key):
     rail = [['' for i in range(len(text))] for j in range(key)]
     dir_down = False
     row, col = 0, 0
@@ -11,10 +11,7 @@ def rail_fence_encrypt(text, key):
 
         rail[row][col] = text[i]
         col += 1
-        if dir_down:
-            row += 1
-        else:
-            row -= 1
+        row = row+1 if dir_down else row-1
 
     ciphertext = ''
     for i in range(len(rail)):
@@ -24,7 +21,7 @@ def rail_fence_encrypt(text, key):
             ciphertext += rail[i][j]
     return ciphertext
 
-def rail_fence_decrypt(ciphertext, key):
+def decrypt(ciphertext, key):
     rail = [['' for i in range(len(ciphertext))] for j in range(key)]
     dir_down = False
     length = len(ciphertext)
@@ -44,18 +41,26 @@ def rail_fence_decrypt(ciphertext, key):
         text += rail[row][col]
         if (row == 0) or (row == key - 1):
             dir_down = not dir_down
-        if dir_down:
-            row += 1
-        else:
-            row -= 1
+        row = row+1 if dir_down else row-1
     return text
 
 
-text = "HAPPY BIRTHDAY"
-key = 2
-
-ciphertext = rail_fence_encrypt(text, key)
-print("\nEncrypted text: ", ciphertext)
-plaintext = rail_fence_decrypt(ciphertext, key)
-print("\nDecrypted text: ", plaintext)
+print("0: Exit\n1: Encryption\n2: Decryption")
+while True:
+    match input("\nEnter your option: "):
+        case '':
+            pass
+        case '0':
+            print("Exiting...")
+            break
+        case '1':
+            text = input("Enter text: ")
+            key = int(input("Enter key value: "))
+            print("\nEncrypted text: ", encrypt(text, key))
+        case '2':
+            text = input("Enter text: ")
+            key = int(input("Enter key value: "))
+            print("\nDecrypted text: ", decrypt(text, key))
+        case _:
+            print("Invalid Choise. Try again...")
 

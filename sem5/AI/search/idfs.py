@@ -1,43 +1,24 @@
 from RMP import dict_gn
 
 start = "Arad"
-goal = "Bucharest"
-result = ""
+target = "Bucharest"
+traversal = []
 
-def DLS(city, visitedstack, startlimit, endlimit):
-    global result
-    print("===== DLS(%s, %s, %s, %s)" % (city, visitedstack, startlimit, endlimit))
-    found = False
-    result = result + " " + city
-    visitedstack.append(city)
-    if city == goal:
-        print("Found", goal, "in DLS")
+def recursive_DLS(city, level, limit):
+    traversal.append(city)
+    if city == target:
         return True
-    if startlimit == endlimit:
-        print("\t %s: Reached upper bound" % (city))
+    if level == limit:
         return False
-    for eachcity in dict_gn[city].keys():
-        if eachcity not in visitedstack:
-            found = DLS(eachcity, visitedstack, startlimit+1, endlimit)
-        else:
-            print("\t %s: %s already visited" % (city, eachcity))
-        if found:
-            return found
+    for neighbor in dict_gn[city]:
+        if neighbor not in traversal:
+            if recursive_DLS(neighbor, level+1, limit):
+                return True
 
-def IDDFS(city, visitedstack, endlimit):
-    global result
-    for i in range(0, endlimit):
-        print("\n\nSearching at limit:", i)
-        found = DLS(city, visitedstack, 0, i)
-        if found:
-            print("Found!")
-            break
-        else:
-            print("Not found!")
-            print(result)
-            result = ""
-            visitedstack = []
+for i in range(9):
+    if recursive_DLS(start, 0, i):
+        break
+    traversal = []
 
-visitedstack = []
-IDDFS(start, visitedstack, 9)
-print("\nIDDFS Traversal from", start, "to", goal, "is :-\n", result)
+print("IDDFS traversal from %s to %s :-" %(start, target))
+print(' -> '.join(traversal))
