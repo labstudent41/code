@@ -29,7 +29,7 @@ for student in students_above_60:
         toppers['Marathi'] = [student[0], student[3]]
 
 for subject in toppers:
-    print("The topper of %s exam is %s scoring %s makrs." %\
+    print("The topper of %s exam is %s scoring %s marks." %\
             (subject, toppers[subject][0], toppers[subject][1]))
 
 input("Press Enter to Exit...")

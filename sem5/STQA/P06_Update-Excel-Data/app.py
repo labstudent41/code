@@ -9,4 +9,5 @@ def index():
     data = df.to_dict('records')
     return render_template("index.html", data=data)
 
-app.run()
+if __name__ == "__main__":
+    app.run()
