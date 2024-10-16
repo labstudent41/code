@@ -69,15 +69,15 @@
 			var name = document.updateForm.name.value;
 			var age = document.updateForm.age.value;
 			var grade = document.updateForm.grade.value.toUpperCase();
-			var msg = document.getElementById('msg')
+			var msg = document.getElementById('msg');
 
 			if (name === "" || (age === "" && grade === "")) {
 				msg.innerHTML = "Enter Name and either updated age or grade.";
-				return
+				return;
 			}
 
-			var table = document.getElementById('dataTable')
-			var rows = table.rows
+			var table = document.getElementById('dataTable');
+			var rows = table.rows;
 			var rowIndex = -1;
 
 			for (let i = 0; i < rows.length; i++) {
@@ -89,23 +89,23 @@
 
 			if (rowIndex === -1) {
 				msg.innerHTML = "Student Record not found in table.";
-				return
+				return;
 			}
 
 			if (rows[rowIndex].cells[1].innerHTML === age) {
 				msg.innerHTML = "The updated age is the same as the old age.";
-				return
+				return;
 			}
 
 			if (grade !== "") {
 				if (rows[rowIndex].cells[2].innerHTML === grade) {
 					msg.innerHTML = "The updated grade is the same as the old grade.";
-					return
+					return;
 				}
 				const gradeRE = /^[A-F]\+{0,2}$/;
 				if (!gradeRE.test(grade)) {
 					msg.innerHTML = "Grade can only be from A to F followed by + or ++";
-					return
+					return;
 				}
 				rows[rowIndex].cells[2].innerHTML = grade;
 			}
