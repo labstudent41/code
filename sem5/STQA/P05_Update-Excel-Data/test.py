@@ -26,7 +26,7 @@ students = [
     ["Vikas",    22,  "F"],
     ]
 
-print("Press Enter to continue")
+print("Keep pressing Enter to continue...")
 for student in students:
     input("\nStudent: " + str(student))
     input_name = driver.find_element(By.NAME, "name")
@@ -43,7 +43,7 @@ for student in students:
     if msg == "Student record updated successfully!":
         print(student[0], "updated successfully.")
     else:
-        input("A wrong input was given, aborting updates...")
+        input("A wrong input was given, aborting updates.")
         exit()
 
 student_data = []
