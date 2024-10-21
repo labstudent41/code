@@ -20,7 +20,9 @@ for row in rows[1:]:
     if english > 60 or hindi > 60 or marathi > 60:
         students_above_60.append((cells[1].text, english, hindi, marathi))
 
+print("Students above 60 :-")
 for student in students_above_60:
+    print("\t", student[0])
     if student[1] > toppers['English'][1]:
         toppers['English'] = [student[0], student[1]]
     if student[2] > toppers['Hindi'][1]:
@@ -32,5 +34,4 @@ for subject in toppers:
     print("The topper of %s exam is %s scoring %s marks." %\
             (subject, toppers[subject][0], toppers[subject][1]))
 
-input("Press Enter to Exit...")
 driver.quit()
