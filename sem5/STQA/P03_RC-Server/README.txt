@@ -1,4 +1,5 @@
-Commands used are :-
+Use an IDE like Eclipse or
+Or Run from command line :-
 
 javac -cp '.:selenium-java/*' SeleniumDemo.java
 java -cp '.:selenium-java/*' SeleniumDemo
@@ -8,8 +9,9 @@ OR
 javac -cp '.:selenium-server.jar' SeleniumDemo.java
 java -cp '.:selenium-server.jar' SeleniumDemo
 
-Downloading the selenium-jar or the selenium-java zip file which contains a lot
-of those jars seperately; both worked for me.
+Downloading the selenium-jar file.
+Alternatively, you can download the selenium-java zip file.
+It contains a lot of those jars seperately. Both worked for me.
 
 Above selenium files can be downloaded from:
     github.com/SeleniumHQ/selenium/releases
