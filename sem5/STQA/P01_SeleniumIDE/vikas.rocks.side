@@ -1,0 +1,259 @@
+{
+  "id": "28bd695b-855c-449c-b7ac-ba250a61b7d5",
+  "version": "2.0",
+  "name": "vikas.rocks",
+  "url": "https://vikas.rocks",
+  "tests": [{
+    "id": "9063e463-f563-41c9-9d4b-ae4b0b183779",
+    "name": "Exam Results",
+    "commands": [{
+      "id": "57337e44-6d2f-4210-87d4-c742341c7231",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53ef4357-bb06-4081-b56b-4fb901becf6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "2112x1127",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72f43525-4479-4b4f-94dc-24b7ff52fbf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu:nth-child(8) .title",
+      "targets": [
+        ["css=.menu:nth-child(8) .title", "css:finder"],
+        ["xpath=//div[2]/a/span[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25d6d0b1-a5bb-43c9-9fef-662254d47751",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'🗓️  2023-24')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/results/2023-24/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38d5930a-86ca-4712-92c9-4821f6e987a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(10) > a",
+      "targets": [
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'📜  SYCS Sem III')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/results/2023-24/sycs-sem3/')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7a680f-5d42-4443-975d-f4fe7f251f53",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e563aab8-a20c-4cde-a88d-378ff8931b1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d957d66-e0e4-4e2c-a5f3-e4fa817fb241",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c3ebf5a-9bd2-480f-8786-5250c9de0858",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "404d4d96-c4dd-4a97-969b-287c4f645f25",
+    "name": "BITS24",
+    "commands": [{
+      "id": "dbfaec71-9074-4711-ab31-fad7c0c33b4d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fd69d7d-7da8-4681-9ec6-a443a1dd0492",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "2112x1127",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "641a01b0-a82c-4793-840f-ea2ec8b0b823",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu:nth-child(11) > a:nth-child(1) .desc",
+      "targets": [
+        ["css=.menu:nth-child(11) > a:nth-child(1) .desc", "css:finder"],
+        ["xpath=//div[3]/a/span[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf73aed7-6b14-4c95-9bf2-13e77b7d2a9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-left",
+      "targets": [
+        ["css=.top-left", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f7baef8-597d-4a5e-8108-0c3aab9c08be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cards:nth-child(5) .info",
+      "targets": [
+        ["css=.cards:nth-child(5) .info", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee5fa93b-4d0e-4fe9-a1bc-ac1355397011",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cards:nth-child(10) > .card:nth-child(1) li:nth-child(2)",
+      "targets": [
+        ["css=.cards:nth-child(10) > .card:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'🙎 Individual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afdd0b09-88b8-477e-981e-6708269722e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aos-init > .card:nth-child(1) ul",
+      "targets": [
+        ["css=.aos-init > .card:nth-child(1) ul", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c326c1-8c58-4797-8169-ddc46382ffae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sponsor-section",
+      "targets": [
+        ["css=.sponsor-section", "css:finder"],
+        ["xpath=//section[4]", "xpath:position"],
+        ["xpath=//section[contains(.,'Our Sponsors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "022fd2ac-c654-4191-97e7-9da392826f25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address",
+      "targets": [
+        ["css=.address", "css:finder"],
+        ["xpath=//div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a564fa0a-868b-486e-9a9e-a190b432ce91",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a1da6713-7ab6-4a35-bd1d-9c4ae4e11843",
+    "name": "Instagram",
+    "commands": [{
+      "id": "d4565ec8-9175-45d6-9c68-3dcabe3981a2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb270f8f-2ed6-4ad3-9c5d-544700757b99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1048x1119",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "961236a6-6c70-4615-ab95-c1d775779617",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5) .title",
+      "targets": [
+        ["css=a:nth-child(5) .title", "css:finder"],
+        ["xpath=//a[5]/span[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "305a7808-01bb-4067-919e-a718c94542b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=@v.o.i.d_a.c.c.o.u.n.t",
+      "targets": [
+        ["linkText=@v.o.i.d_a.c.c.o.u.n.t", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'@v.o.i.d_a.c.c.o.u.n.t')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.instagram.com/v.o.i.d_a.c.c.o.u.n.t/')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'@v.o.i.d_a.c.c.o.u.n.t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ef028d4-3906-4307-8e6e-8136906f3741",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "674494fb-044b-4688-9bca-3438c24c8a26",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9063e463-f563-41c9-9d4b-ae4b0b183779"]
+  }, {
+    "id": "3436c33a-ca86-4f21-8dee-66b3cd325e4c",
+    "name": "vikas.rocks",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9063e463-f563-41c9-9d4b-ae4b0b183779", "404d4d96-c4dd-4a97-969b-287c4f645f25", "a1da6713-7ab6-4a35-bd1d-9c4ae4e11843"]
+  }],
+  "urls": ["https://vikas.rocks/"],
+  "plugins": []
+}
